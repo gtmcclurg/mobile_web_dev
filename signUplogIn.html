@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="static">
+    <header>
+        <img src = "generatedtext.png">
+    </header>
+    </div>
+
+    <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/600/food/1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/600/food/2"></a>
+            <a class="carousel-item" href="#three!"><img src = "https://lorempixel.com/800/600/nature/3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/600/nature/4"></a>
+    </div>
+    </div>
+
+<!--
+<div class = "container">
+    <div class = "signUp">
+        <button onclick="myFunction()">Sign up</button>
+    </div>
+    <div class = "login">
+        <button onclick="ourFunction()">Login</button>
+    </div>
+</div>
+-->
+
+<div class = "container">
+<button type="button" class="btn btn-primary btn-lg btn-block" button onclick="myFunction()">Sign Up</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block" button onclick="ourFunction()">Log in</button>
+</div>
+
+
+    <script type="text/javascript" src="materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+
+        function myFunction(){
+            location.href = "index.html";
+        }
+
+        function ourFunction(){
+            location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
