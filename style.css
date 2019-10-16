@@ -5,8 +5,8 @@ header img{
 }
 .static{
     padding: 5px;
-    box-shadow: grey 1px 1px;
     opacity: 50%;
+    position: static;
 }
 .navbar{
     overflow: hidden;
@@ -14,6 +14,7 @@ header img{
     position: fixed;
     bottom: 0;
     width: 100%; 
+    margin: 0%;
 }
 
 .navbar a {
@@ -28,10 +29,6 @@ header img{
 .navbar a:hover {
   background: #f1f1f1;
   color: black;
-}
-.navbar img{
-  height: 32px;
-  width: 32px;
 }
 * {box-sizing: border-box}
 
@@ -86,4 +83,53 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.containing{
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: block;
+}
+.containing button{
+  height: 100px;
+  width: 100%;
+  display: block;
+}
+.signUp{
+  background-color: #659FE9;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: black 1px 1px;
+  text-shadow: #333 1px 1px;
+}
+.login{
+  background-color: #C13D45;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: black 1px 1px;
+  text-shadow: #333 1px 1px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  position: relative;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: fill;
 }
